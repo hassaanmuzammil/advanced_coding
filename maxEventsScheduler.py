@@ -12,7 +12,6 @@ def get_earliest_finish(start_time,start_end_map):
             end_times.append(j)
     return min(end_times)
 
-
 def max_events_scheduler(arrival,duration):
     events_list = []
     max_events = 0

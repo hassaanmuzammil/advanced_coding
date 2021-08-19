@@ -1,3 +1,6 @@
+arrival = [1,2,3,3,5,7,8,9,10]
+duration = [2,1,2,1,2,1,5,1,3]
+
 def update_start_end_map(start_end_map, earliest_finish):
     start_end_map_updated = []
     for i,j in start_end_map:
@@ -32,3 +35,6 @@ def max_events_scheduler(arrival,duration):
             #print(start_end_map)
         
         return max_events
+
+max_events_scheduler(arrival,duration)
+#returns 6

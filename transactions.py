@@ -20,4 +20,4 @@ def get_transactions(transactions):
  
 get_transactions(transactions)
 
-['banana 5', 'apricot 4', 'capsicum 4']
+#returns ['banana 5', 'apricot 4', 'capsicum 4']

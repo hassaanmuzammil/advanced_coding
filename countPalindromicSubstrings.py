@@ -3,7 +3,6 @@ s = "abccba"
 def countPalindromicSubstring(s):
     """
     :type s: str
-    :type n: int (length )
     :rtype: int
     """
 
@@ -40,3 +39,5 @@ def countPalindromicSubstring(s):
     return sum([l.count(True) for l in dp])
   
 countPalindromicSubstring(s)
+
+#returns 9

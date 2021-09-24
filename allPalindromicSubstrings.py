@@ -3,7 +3,7 @@ s = 'abccba'
 def allPalindromicSubstring(s):
     """
     :type s: str
-    :rtype: list
+    :rtype: List[str]
     """
 
     dp = [] # 2d reference table 

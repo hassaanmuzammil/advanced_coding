@@ -20,3 +20,17 @@ def isBalanced(s):
                 return False
         idx += 1
     return stack.empty()
+
+
+if __name__ == "__main__":
+    s = "foobar(x);"
+    
+    # get brackets only
+    brackets = []
+    for c in s:
+        if c in "[]{}()":
+            brackets.append(c)
+    brackets = ''.join(brackets)
+    
+    # run function
+    isBalanced(brackets)

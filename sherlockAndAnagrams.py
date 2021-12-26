@@ -18,7 +18,7 @@ def sherlock_and_anagrams(s):
     substrings = find_all_possible_substrings_sorted(s)
     counter = Counter(substrings)
     filtered = {k:v for k,v in counter.items() if v > 1}
-    anagrams = sum([sum(range(v) for v in filtered.values)])
+    anagrams = sum([sum(range(v) for v in filtered.values())])
     return anagrams
 
 s = "ifailuhkqq"

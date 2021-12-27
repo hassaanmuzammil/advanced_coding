@@ -10,7 +10,7 @@ def find_all_possible_substrings_sorted(s):
     for i in range(len(s)):
         for j in range(i,len(s)+1):
             substring = s[i:j]
-            if len(substring) > 1 or len(substring) < len(s):
+            if len(substring) > 1 and len(substring) < len(s):
                 substrings.append(''.join(sorted(substring)))
     return substrings
 
